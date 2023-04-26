@@ -71,7 +71,7 @@ const HomeServices = () => {
         <div className='flex flex-row flex-wrap items-center justify-center mx-0 mt-3 md:w-[100%] lg:mt-10'>
             {serviceItems.map((item)=>{ 
                 return(
-            <div key={item.id} className='flex flex-col items-start justify-start bg-[#F4F4F4] hover:bg-[#F8C605] h-[12rem] w-[20rem] my-3 mx-5 md:w-[20rem] md:h-[13rem] lg:w-[25rem] lg:h-[14rem] xl:w-[33rem] xl:h-[20rem] xl:mx-12 xl:my-7'>
+            <div key={item.id} className='flex flex-col items-start justify-start bg-[#F4F4F4] hover:bg-[#F8C605] h-[12rem] w-[20rem] my-3 mx-5 md:w-[20rem] md:h-[13rem] lg:w-[24rem] lg:h-[14rem] lg:mx-3 xl:w-[33rem] xl:h-[20rem] xl:mx-10 xl:my-7'>
                 <div className='flex flex-row items-center justify-between mx-5 mt-5 xl:ml-12 xl:mt-10'>
                     <div className='bg-[#1A8F98] h-11 w-14 xl:h-14 xl:w-[70px]'>
                        {item.icon}

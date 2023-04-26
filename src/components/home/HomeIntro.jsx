@@ -1,13 +1,13 @@
 import React from 'react'
-import img1 from '../../assets/img-1.png'
+import img1 from '../../assets/img1.jpg'
 import Nav from '../Nav'
 
 const HomeIntro = () => {
   return (
-    <div className="bg-cover bg-center h-[32rem] px-5 md:px-10 md:h-[33rem] lg:h-[34rem] lg:px-12 xl:h-[47rem] xl:px-20 xl:w-[100vw]" style={{backgroundImage: `url(${img1})`}}>
+    <div className="bg-cover bg-center opacity-90 h-[32rem] px-5 md:px-10 md:h-[33rem] lg:h-[34rem] lg:px-12 xl:h-[47rem] xl:px-20 xl:w-[100vw]" style={{backgroundImage: `url(${img1})`}}>
         <Nav />
         <div className='flex-col items-start justify-end mt-36 xl:mt-44'>
-           <div className='flex justify-start items-center'>
+           <div className='flex z-50 justify-start items-center'>
                <h1 className='text-white text-4xl font-inter font-[800] md:text-5xl md:font-[700] lg:text-5xl xl:text-7xl xl:leading-[5.3rem]'>
                   Your China <br /> Supply <span className='text-[#F8C605]'>Comrade</span>
                </h1>

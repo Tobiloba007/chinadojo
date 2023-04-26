@@ -36,6 +36,7 @@ const HomeFaq = () => {
             words: "You just download our address card, send it to your suppliers and they send your goods to Us.",
         },
     ]
+    
     const [arrow, setArrow] = useState(true)
 
     const handleClick = () => {

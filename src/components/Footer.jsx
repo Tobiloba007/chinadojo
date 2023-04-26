@@ -1,14 +1,15 @@
 import React from 'react'
-import img1 from '../assets/img16.png'
+import img1 from '../assets/img16.jpg'
 import logo from '../assets/logo.png'
 import { MdKeyboardArrowRight, MdLocationOn, MdMail } from 'react-icons/md'
 import { HiPhone } from 'react-icons/hi'
 import { TiSocialFacebookCircular, TiSocialTwitterCircular, TiSocialLinkedinCircular } from 'react-icons/ti'
 import { AiOutlineCopyright } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className='h-[39rem] w-screen md:h-[42rem] lg:h-[24rem] xl:h-[28rem]' style={{backgroundImage: `url(${img1})`}}>
+    <div className='bg-cover bg-center h-[39rem] w-screen md:h-[42rem] lg:h-[24rem] xl:h-[28rem]' style={{backgroundImage: `url(${img1})`}}>
 
         <div className='flex flex-col items-start justify-center mx-5 lg:flex-row lg:items-start lg:justify-between lg:mx-12 lg:pt-5 xl:mx-28'>
             <div className='flex flex-col items-start justify-center mt-8'>
@@ -24,19 +25,21 @@ const Footer = () => {
                 </h1>
                 <p className='flex flex-row items-center justify-center text-white my-2'>
                     <MdKeyboardArrowRight className='text-base xl:text-2xl' />
-                    <span className='text-sm font-[700] xl:text-lg'>About Us</span>
+                    <Link to='/about'
+                    className='text-sm font-[700] xl:text-lg hover:text-[#FFCF24]'>About Us</Link>
                 </p>
                 <p className='flex flex-row items-center justify-center text-white my-2'>
                     <MdKeyboardArrowRight className='text-base xl:text-2xl' />
-                    <span className='text-sm font-[700] xl:text-lg'>Services</span>
+                    <Link to='/services'
+                    className='text-sm font-[700] xl:text-lg hover:text-[#FFCF24]'>Services</Link>
                 </p>
                 <p className='flex flex-row items-center justify-center text-white my-2'>
                     <MdKeyboardArrowRight className='text-base xl:text-2xl' />
-                    <span className='text-sm font-[700] xl:text-lg'>Testimonials</span>
+                    <Link className='text-sm font-[700] xl:text-lg hover:text-[#FFCF24]'>Testimonials</Link>
                 </p>
                 <p className='flex flex-row items-center justify-center text-white my-2'>
                     <MdKeyboardArrowRight className='text-base xl:text-2xl' />
-                    <span className='text-sm font-[700] xl:text-lg'>Contact Us</span>
+                    <Link className='text-sm font-[700] xl:text-lg hover:text-[#FFCF24]'>Contact Us</Link>
                 </p>
             </div>
 
