@@ -50,7 +50,7 @@ const HomeSection4 = () => {
                    Trusted by more <span className='text-[#1A8F98]'>150+</span> <br /> Partners in China
                 </h1>
                 <p className='font-sans text-[12px] mt-2 font-[500] leading-5 md:w-[85%] md:text-[14px] xl:text-[19px] xl:my-7'>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+                    Our unshakable dedication to ethics serves as the cornerstone of everything we do. We are able to establish confidence with our clients and business partners and foster enduring relationships because of this devotion.
                 </p>
             </div>
         </div>

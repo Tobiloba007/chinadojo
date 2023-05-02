@@ -24,7 +24,7 @@ const Testimonials1 = () => {
                 </div>
 
                 <p className='font-inter text-[#333333] text-[13px] mx-7 text-center font-[500] lg:mx-10 lg:font-[600] lg:leading-6 xl:text-[17px] xl:leading-8 xl:mx-16'>
-                   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem  
+                   You can feel assured that Chinadojo has your best interests at heart. They genuinely care about your company and will go above and beyond to meet your needs.
                 </p>
 
                 <div className='flex flex-row items-center justify-center mt-7 md:mt-8'>

@@ -9,7 +9,7 @@ export default {
     extend: {
         fontFamily: {
           "inter": ['Inter', 'sans-serif'],
-          "sans": ['DM+Sans', 'sans-serif']
+          "sans": ['DM+Sans', 'sans-serif'],
       },
     },
   },

@@ -3,9 +3,12 @@ import img1 from '../../assets/img9.png'
 import { GiShoppingCart, GiBoxUnpacking, GiTakeMyMoney } from 'react-icons/gi'
 import { SlPlane, SlSettings } from 'react-icons/sl'
 import { VscVerified } from 'react-icons/vsc'
+import { useNavigate } from 'react-router-dom'
 
 
 const HomeServices = () => {
+
+    const navigate = useNavigate();
 
     const serviceItems = [
         {
@@ -36,13 +39,15 @@ const HomeServices = () => {
             id: 5,
             icon: <GiTakeMyMoney className='text-3xl text-white text-center mt-2 ml-3 xl:text-4xl xl:ml-4 xl:mt-3' />,
             title: 'Payment to Chinese Suppliers',
-            words: 'We help companies pay their Chinese suppliers instantly through bank transfers, WeChat, AliPay, and even QQ, all while receiving payment in Naira. No matter the sum, we provide the best rates and lowest fees.',
+            words: 'No matter the amount, we offer the best rates and lowest costs. We assist businesses in making rapid payments to their Chinese suppliers via bank transfers, WeChat, AliPay, and even QQ while receiving payment in Naira.',
         },
         {
             id: 6,
             icon: <SlSettings className='text-3xl text-white text-center mt-2 ml-3 xl:text-4xl xl:ml-4 xl:mt-3' />,
             title: 'Manufacturing',
-            words: "For all market niches, we provide private label production. We make sure that you get the greatest quality that complies with international industry standards from well regarded suppliers all throughout China, whether it's for personal, organizational, or business uses.",
+            words: <p> Private label production is a service we offer for all market segments. <br />
+                      Whether it's for personal, organizational, or commercial applications, we ensure that you receive the best quality that meets with international industry standards from reputable suppliers located throughout China.",
+                   </p>
         },
     ]
 
@@ -59,7 +64,7 @@ const HomeServices = () => {
                    We provide the best <br /> Logistics Services
                 </h1>
                 <p className='font-sans text-[12px] mt-2 font-[500] leading-5 md:w-[85%] md:text-[14px] lg:text-[13px] xl:text-[18px] xl:my-4'>
-                   It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+                   At Chinadojo, we are steadfast in our dedication to providing our customers with quick and dependable fulfillment of our promises. 
                 </p>
             </div>
             <div className='my-5 lg:w-[47%] xl:w-[47%]'>
@@ -71,7 +76,7 @@ const HomeServices = () => {
         <div className='flex flex-row flex-wrap items-center justify-center mx-0 mt-3 md:w-[100%] lg:mt-10'>
             {serviceItems.map((item)=>{ 
                 return(
-            <div key={item.id} className='flex flex-col items-start justify-start bg-[#F4F4F4] hover:bg-[#F8C605] h-[12rem] w-[20rem] my-3 mx-5 md:w-[20rem] md:h-[13rem] lg:w-[24rem] lg:h-[14rem] lg:mx-3 xl:w-[33rem] xl:h-[20rem] xl:mx-10 xl:my-7'>
+            <div key={item.id} className='flex flex-col items-start justify-start bg-[#F4F4F4] hover:bg-[#F8C605] h-[13rem] w-[20rem] my-3 mx-5 md:w-[20rem] md:h-[13rem] lg:w-[24rem] lg:h-[15rem] lg:mx-3 xl:w-[33rem] xl:h-[21rem] xl:mx-10 xl:my-7'>
                 <div className='flex flex-row items-center justify-between mx-5 mt-5 xl:ml-12 xl:mt-10'>
                     <div className='bg-[#1A8F98] h-11 w-14 xl:h-14 xl:w-[70px]'>
                        {item.icon}
@@ -90,7 +95,8 @@ const HomeServices = () => {
         </div>
 
         <div className='flex flex-row items-center justify-center mt-7'>
-            <button className='font-inter text-white bg-[#1A8F98] hover:bg-[#F8C605] hover:text-[#474545] h-10 w-40 text-xs font-[500] md:h-12 lg:w-48 lg:text-sm xl:h-20 xl:w-60 xl:text-base'>View  Service Policy</button>
+            <button onClick={()=>navigate('/policy')}
+            className='font-inter text-white bg-[#1A8F98] hover:bg-[#F8C605] hover:text-[#474545] h-10 w-40 text-xs font-[500] md:h-12 lg:w-48 lg:text-sm xl:h-20 xl:w-60 xl:text-base'>View  Service Policy</button>
         </div>
 
     </div>
