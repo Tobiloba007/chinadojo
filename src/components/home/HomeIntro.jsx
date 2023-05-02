@@ -25,9 +25,11 @@ const HomeIntro = () => {
            </div>
 
            <div className='flex items-center justify-start my-8 md:my-5 xl:my-10'>
+             <a href="https://forms.gle/xLtrJHZTkv7537FEA" target="_blank" rel="noopener noreferrer">
               <button className='bg-[#1A8F98] hover:bg-[#F8C605] hover:text-[#474545] text-white z-50 h-10 px-5 text-[11px] font-semibold md:text-[12px] lg:text-[13px] lg:h-12 lg:px-6 xl:text-[15px] xl:font-bold xl:h-16 xl:px-8'>
                   BOOK YOUR SHIPPING
               </button>
+             </a>
               <button onClick={()=>navigate('/about')}
               className='border-2 hover:border-[#F8C605] hover:text-[#F8C605] text-white h-10 z-50 px-5 mx-5 text-[11px] font-semibold md:text-[12px] lg:text-[13px] lg:h-12 lg:px-6 lg:mx-8 xl:text-[15px] xl:font-bold xl:h-16 xl:px-8 xl:mx-12'>
                    LEARN MORE
