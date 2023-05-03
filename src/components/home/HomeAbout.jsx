@@ -64,7 +64,7 @@ const HomeAbout = () => {
                     </p>
                 </div>
 
-                <div className='absolute flex items-center justify-center right-[33px] mr-5 bg-[#1A8F98] h-[60px] w-[60px] md:left-[22.5rem] lg:left-[49rem] lg:h-[70px] lg:w-[70px] xl:left-[69.5rem] xl:w-[90px] xl:h-[90px]'>
+                <div className='relative flex items-center justify-center right-[33px] mr-5 bg-[#1A8F98] h-[60px] w-[60px] md:right-[33px] lg:right-[33px] lg:h-[70px] lg:w-[70px] xl:right-[40px] xl:w-[90px] xl:h-[90px]'>
                     <GoQuote className='text-3xl text-white text-center font-[800] lg:text-4xl xl:text-5xl' />
                 </div>
             </div>
