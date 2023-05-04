@@ -6,7 +6,7 @@ import img1 from '../../assets/img13.png'
 const Testimonials1 = () => {
   return (
     <div className='flex flex-row items-center justify-center pb-12 xl:pb-16'>
-        <div className='flex flex-col items-center justify-center relative rounded-xl bg-white mt-0 w-[80%] h-[23rem] md:w-[53%] lg:w-[43%] xl:mt-12 xl:w-[40%] xl:h-[31rem] xl:rounded-3xl'>
+        <div className='flex flex-col items-center justify-center relative rounded-xl bg-white mt-0 w-[80%] h-[23rem] md:w-[53%] lg:w-[60%] xl:mt-12 xl:w-[60%] xl:h-[31rem] xl:rounded-3xl'>
                 <div className='flex flex-row items-center justify-center absolute top-[-50px] xl:top-[-75px]'>
                     <img className='w-28 h-28 rounded-full md:h-32 md:w-32 xl:h-44 xl:w-44' src={img1} alt="..." />
                 </div>

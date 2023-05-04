@@ -1,7 +1,9 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";;
-import { Navigation } from "swiper";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import img1 from '../../assets/img17.png'
 import img2 from '../../assets/img18.png'
 import img3 from '../../assets/img19.png'
@@ -56,7 +58,15 @@ const HomeSection4 = () => {
         </div>
             {/* CAROUSEL */}
         <div className='flex flex-row items-center justify-center mt-8 md:mt-12'>
-           <Swiper navigation={true} modules={[Navigation]} className="w-screen h-[20rem] lg:w-[400px] xl:w-[40rem] xl:h-[30rem]">
+           <Swiper 
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay]}
+             className="w-screen h-[20rem] lg:w-[400px] xl:w-[40rem] xl:h-[30rem]">
                <SwiperSlide className='flex flex-row items-center justify-center text-center'>
                    <img src={img1} alt="" />
                </SwiperSlide>
