@@ -15,25 +15,25 @@ const HomeSection4 = () => {
             id: 1,
             number: <h1 className='font-sans text-2xl text-[#282727] font-[600] mr-3 lg:text-3xl xl:text-[40px]'>01</h1>,
             title: 'Seamless delivery Service',
-            words: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  ',
+            words: 'Your orders are shipped promptly and effectively by our knowledgeable logistics staff, guaranteeing that you receive your orders on time and in good condition.',
         },
         {
             id: 2,
             number: <h1 className='font-sans text-2xl text-[#F8C605] font-[600] mr-3 lg:text-3xl xl:text-[40px]'>02</h1>,
             title: 'Affordable Price',
-            words: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  ',
+            words: 'We provide affordable shipping costs to every location, guaranteeing that you get the most for your money.',
         },
         {
             id: 3,
             number: <h1 className='font-sans text-2xl text-[#282727] font-[600] mr-3 lg:text-3xl xl:text-[40px]'>03</h1>,
             title: 'Professionalism',
-            words: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  ',
+            words: 'Our staff members have undergone extensive training to handle your services using the most recent technology and the best standards in the business.',
         },
         {
             id: 4,
             number: <h1 className='font-sans text-2xl text-[#F8C605] font-[600] mr-3 lg:text-3xl xl:text-[40px]'>04</h1>,
             title: 'Excellent Customer Service',
-            words: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.  ',
+            words: 'The satisfaction of our customers is crucial to us because they are the reason we are in business.',
         },
     ]
 
