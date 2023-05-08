@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../Nav'
-import img1 from '../../assets/img24.png'
+import img1 from '../../assets/img24.jpg'
 
 const AboutIntro = () => {
   return (
