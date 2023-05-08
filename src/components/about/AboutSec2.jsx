@@ -16,7 +16,7 @@ const AboutSec2 = () => {
         {
             id: 2,
             title: 'Customer Satisfaction',
-            words: ' Customer satisfaction is always our primary goal at Naiyuan Mart. We put customers at the heart of every choice we make, and we go above and beyond to make sure they are satisfied with our goods and services. Our clients are the reason we are in business, so their pleasure is extremely important to us.',
+            words: ' Customer satisfaction is always our primary goal at chinadojo. We put customers at the heart of every choice we make, and we go above and beyond to make sure they are satisfied with our goods and services. Our clients are the reason we are in business, so their pleasure is extremely important to us.',
         },
     ]
   return (
