@@ -57,48 +57,153 @@ const PolicySec2 = () => {
         },
         {
             id: 2,
-            title: "How do i find verified suppliers",
-            words: "You can find suppliers on online stores, but for verified suppliers, you need to contact Us.",
+            title: "Sea Cargo",
+            words: <p>1. Dear Customer, please ensure your name+phone number+ sea is clearly written on your goods, failure to do so, such items will be rejected on arrival to our warehouse.
+              <br />
+              2. We offer consolidation of many packages for Sea cargo.
+              <br />
+              3.  Sea cargo leaves every 10 days.
+              <br />
+              4.  We follow the best industry standards for international freight forwarding, so safety and security of your goods is of great importance to us, however Chinadojo shall not be held responsible for items damaged in transit, however for missing items, the company will offer shipping discount for 100% of items value, after the customer has proved beyond reasonable doubt that such items got missing while in the custody of Chinadojo.
+              <br />
+              5. We shall take all necessary precautions to protect fragile items, however all such items shall be sent totally at owner’s risk.
+              <br />
+              6. Items are kept for free in the China warehouse for 14 days, if you are expecting more arrivals, however after 14 days, a warehouse charge of 35 RMB/Day applies.
+              <br />
+              7. Please note, we charge 15 RMB/Carton plus transportation and loading charge if you want to move your goods from our warehouse.
+              <br />
+              8. Chinadojo shall not be held responsible for goods seized by customs or other relevant bodies or Government agency either in China or in Nigeria, and customers shall be responsible for fines if such arises, please ensure all items you buy are in line with rules and regulations of both countries. Payment Invoice for shipments is valid only for 24 hours and the prevailing USD/NGN rates apply on date of payment.",
+            </p>
         },
         {
             id: 3,
-            title: "What are your payment options",
-            words: "For Clients based in Nigeria, we accept bank deposit or cash transfers to our FirstBank, GTB or Wema accounts. For foreign clients we accepts online payments via paystack and payoneer.",
+            title: "Procurement Policy",
+            words: <p>
+              1. Customers are required to submit well arranged links stating quantities descriptions and colour.
+              <br />
+              2. Customers are required to make a deposit of N3,000 refunded ONLY after order is placed.
+              <br />
+              3. Our procurement agents will prepare and send a pdf invoice within 24 hours.
+              <br />
+              4. Rates are calculated based on daily exchange rates and invoice is valid for 24 hours only.
+              <br />
+              5. Payment is made for invoice.
+              <br />
+              6. Orders are placed after payment has been made for invoice.
+              <br />
+              7. Procurement takes 7 days.
+              <br />
+              8. We have the right to reject procurement orders if any of our conditions are not met.
+              <br />
+              9. Chinadojo is not responsible for low quality products or incomplete goods delivered by suppliers, please choose your suppliers wisely.
+              <br />
+              10. For incomplete or unavailable items, refunds are processed immediately, the Naira equivalent will be subtracted from your shipping bill or refunded back to you within 7 working days.
+            </p>,
         },
         {
             id: 4,
-            title: "Can you send me an invoice",
-            words: "Yes!, you will get a signed and stamped PDF invoice for all your orders and shipping payments.",
+            title: "Alibaba Procurement Policy",
+            words: <p>
+              1. For Alibaba.com orders.
+              <br />
+              2. Customer submits well arranged links stating quantities descriptions and colour.
+              <br />
+              3. Customer makes a deposit of N5,000 refunded ONLY after order is placed.
+              <br />
+              4. Our procurement agents will prepare and send a pdf invoice within 24 hours.
+              <br />
+              5. Payment is made for invoice.
+              <br />
+              6. Orders are placed.
+              <br />
+              7. Procurement takes 7 days.
+              <br />
+              8. Our service charge is 5% of total order or 100 RMB for orders below N50,000.
+            </p>,
         },
         {
             id: 5,
-            title: "How do i send goods to you",
-            words: "You just download our address card, send it to your suppliers and they send your goods to Us.",
+            title: "Sourcing Policy",
+            words: <p>
+              1. Customer sends clear picture and description of items needed.
+              <br />
+              2. Customer makes a service charge payment of N3,000/item refunded ONLY if items are not found.
+              <br />
+              3. Our sourcing agents will prepare and send a proforma invoice with all details within 24 hours.
+            </p>,
         },
         {
             id: 6,
-            title: "How do i send goods to you",
-            words: "You just download our address card, send it to your suppliers and they send your goods to Us.",
+            title: "Fees & Charges",
+            words: <p>
+              1. FEES & CHARGES FOR AIR FREIGHT (No Hidden Charges)
+              <br />
+              2. Consolidation = N200/Package
+              <br />
+              3. Packing Fee = $2.4 /Carton
+              <br />
+              4. Wood Packing = 100 RMB/Carton
+              <br />
+              5. Shipping Fee (From China – Lagos, Abuja, Kano)
+              <br />
+              6. Custom Duties = N 500/KG (normal goods) N500/KG (Hong Kong Cargo)
+              <br />
+              7. Waybill outside Lagos = N300/KG, Minimum Charge = 3,000
+              <br />
+              8. Items 4 & 5 are applicable in all instances.
+              <br />
+              9. Item 2 is applicable when goods above 10kg
+              <br />
+              10. Item 3 is applicable where items are fragile
+              <br />
+              11. Item 1 is applicable when you buy from more than 1 supplier.
+            </p>,
         },
         {
             id: 7,
-            title: "How do i send goods to you",
-            words: "You just download our address card, send it to your suppliers and they send your goods to Us.",
+            title: "Fragile Goods & Insurance",
+            words: <p>
+              1. At Chinadojo, we take outmost care of all your goods, however we cannot guarantee safety of goods during transit. It is in your best interest to insure fragile and highly valuable goods to ensure you get a full refund in any case of loss or damage, insurance cost is 10% of declared value of your items.
+            </p>,
         },
         {
             id: 8,
-            title: "How do i send goods to you",
-            words: "You just download our address card, send it to your suppliers and they send your goods to Us.",
+            title: "OEM Manufacturing",
+            words: <p>
+              1. We accept links and pictures for OEM manufacturing.
+              <br />
+              2. Service charge for OEM is non-refundable.
+              <br />
+              3. Customers must provide all necessary logos, designs, specifications, and order details.
+              <br />
+              4. We shall provide a comprehensive quote within 48 hours after payments.
+              <br />
+              5. Service Charge for 1 item is N10,000 however this amount is negotiable when customer is manufacturing many types of items.
+            </p>,
         },
         {
             id: 9,
-            title: "How do i send goods to you",
-            words: "You just download our address card, send it to your suppliers and they send your goods to Us.",
+            title: "Refund Policy",
+            words: <p>
+              1. 1688 & Alibaba.com refunds.
+              <br />
+              2. Refunds for incomplete or out of stock items are communicated to customers immediately .
+              <br />
+              3. We do not offer Naira refunds, all refund can be carried over for shipping or for next orders.
+            </p>,
         },
         {
             id: 10,
-            title: "How do i send goods to you",
-            words: "You just download our address card, send it to your suppliers and they send your goods to Us.",
+            title: "Payment Policy",
+            words: <p>
+              1. All payments to Chinese suppliers are completed within 2-24 hours after payment depending on the amount involved.
+              <br />
+              2. For Bank Account, Alipay & WeChat Payments, a transaction fee of 3% will be charged.
+              <br />
+              3. We will do our best to verify all suppliers before payments, however, Naiyuan Mart shall not be held responsible for any loss, therefore customers are advised to deal only with trusted suppliers.
+              <br />
+              4. We shall not make any fraudulent payments, and customers who try such will be reported to the police and prosecuted.
+            </p>,
         },
     ]
 
