@@ -90,7 +90,8 @@ const HomeSection4 = () => {
                    We are known for
                 </h1>
                 <div className='flex flex-row items-center justify-center mt-5 h-[22rem] w-[18rem] bg-[#F8C605] relative lg:h-[25rem] lg:w-[20rem] xl:h-[34rem] xl:w-[26rem]'>
-                    <img className='absolute h-[22rem] w-[18rem] top-4 right-4 lg:h-[25rem] lg:w-[20rem] xl:h-[34rem] xl:w-[26rem] xl:top-7 xl:right-7' src={img12} alt="..." />
+                    <img className='absolute h-[22rem] w-[18rem] top-4 right-4 lg:h-[25rem] lg:w-[20rem] xl:h-[34rem] xl:w-[26rem] xl:top-7 xl:right-7' 
+                    src={img12} alt="..." />
                 </div>
             </div>
 

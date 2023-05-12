@@ -15,13 +15,13 @@ const HomeServices = () => {
             id: 1, 
             icon: <GiShoppingCart className='text-3xl text-white text-center mt-2 ml-3 xl:text-4xl xl:ml-4 xl:mt-3' />,
             title: 'Procurement',
-            words: 'Through our platform, we provide procurement services for all Chinese Online Stores, including AliExpress, Alibaba, Taobao, 1688, DangDang, JD, and many others.',
+            words: 'Through our platform, we provide procurement services for all Chinese Online Stores, including AliExpress, Alibaba, Taobao, 1688, JD, and many others. Our services go beyond  procurement. We handle the end-to-end logistics and shipping processes and ensure smooth transportation of your goods. We take care of the intricate details, allowing you to focus on your core business activities.',
         },
         {
             id: 2,
             icon: <GiBoxUnpacking className='text-3xl text-white text-center mt-2 ml-3 xl:text-4xl xl:ml-4 xl:mt-3' />,
             title: 'Product Sourcing',
-            words: 'We provide professional sourcing services to help companies of all sizes find and obtain high-quality items from reputable and recognized Chinese suppliers.',
+            words: 'We provide professional sourcing services to help companies of all sizes find and obtain high-quality items from reputable and recognized Chinese suppliers. Unsure of what you want to buy or where to shop from, just send us the picture and specifications of what you want and we would handle the rest.',
         },
         {
             id: 3,
@@ -46,7 +46,7 @@ const HomeServices = () => {
             icon: <SlSettings className='text-3xl text-white text-center mt-2 ml-3 xl:text-4xl xl:ml-4 xl:mt-3' />,
             title: 'Manufacturing',
             words: <p> Private label production is a service we offer for all market segments. <br />
-                      Whether it's for personal, organizational, or commercial applications, we ensure that you receive the best quality that meets with international industry standards from reputable suppliers located throughout China.",
+                      Whether it's for personal, organizational, or commercial applications, we ensure that you receive the best quality that meets with international industry standards from reputable suppliers located throughout China.
                    </p>
         },
     ]
@@ -63,7 +63,7 @@ const HomeServices = () => {
                 <h1 className='font-sans text-2xl font-[700] text-[#181818] mt-1 md:font-[800] lg:text-3xl xl:text-[42px] xl:leading-[50px] xl:mt-2'>
                    We provide the best <br /> Logistics Services
                 </h1>
-                <p className='font-sans text-[12px] mt-2 font-[500] leading-5 md:w-[85%] md:text-[14px] lg:text-[13px] xl:text-[18px] xl:my-4'>
+                <p className='font-sans text-[12px] mt-2 font-[500] leading-6 md:w-[85%] md:text-[14px] md:leading-7 lg:text-[13px] lg:leading-6 xl:text-[18px] xl:my-4 xl:leading-8'>
                    At Chinadojo, we are steadfast in our dedication to providing our customers with quick and dependable fulfillment of our promises. 
                 </p>
             </div>
@@ -76,7 +76,7 @@ const HomeServices = () => {
         <div className='flex flex-row flex-wrap items-center justify-center mx-0 mt-3 md:w-[100%] lg:mt-10'>
             {serviceItems.map((item)=>{ 
                 return(
-            <div key={item.id} className='flex flex-col items-start justify-start bg-[#F4F4F4] hover:bg-[#F8C605] h-[13rem] w-[20rem] my-3 mx-5 md:w-[20rem] md:h-[13rem] lg:w-[24rem] lg:h-[15rem] lg:mx-3 xl:w-[33rem] xl:h-[21rem] xl:mx-10 xl:my-7'>
+            <div key={item.id} className='flex flex-col items-start justify-start bg-[#F4F4F4] hover:bg-[#F8C605] h-[15.5rem] w-[20rem] my-3 mx-5 md:w-[20rem] md:h-[15.5rem] lg:w-[24rem] lg:h-[17rem] lg:mx-3 xl:w-[33rem] xl:h-[24.5rem] xl:mx-10 xl:my-7'>
                 <div className='flex flex-row items-center justify-between mx-5 mt-5 xl:ml-12 xl:mt-10'>
                     <div className='bg-[#1A8F98] h-11 w-14 xl:h-14 xl:w-[70px]'>
                        {item.icon}

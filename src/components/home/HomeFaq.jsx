@@ -12,28 +12,28 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md'
 const HomeFaq = () => {
     const items = [
         {
-            title: "What do you sell",
-            words: "Although we don't sell anything and serve everyone, we can assist you in purchasing any goods from reputable Chinese retailers.",
+            title: "What is the shipping rate",
+            words: "You can reach out to any of our amazing customer representative for current exchange and shipping rates.",
         },
         {
-            title: "Do you have office in Nigeria",
-            words: "Yes we have an office on the mainland: 5, Yenusa Adeniji off John Olugbo Street, Ikeja, Lagos, Nigeria.",
+            title: "How long does it get to Nigeria",
+            words: "Normal goods will take 10 days and Hong Kong and sensitive items (battery liquid and powder items) would take 20 days delivery.(Not working days), Sea cargo duration is within 2-3 months.",
         },
         {
-            title: "How do i find verified suppliers",
-            words: "You can find suppliers on online stores, but for verified suppliers, you need to contact Us.",
+            title: "Do you pickup package in China",
+            words: "We don’t offer this service yet, But your supplier can deliver the goods to our China warehouse, Kindly reach out to our customer representative to get our address card.",
         },
         {
-            title: "What are your payment options",
-            words: "For Clients based in Nigeria, we accept bank deposit or cash transfers to our FirstBank, GTB or Wema accounts. For foreign clients we accepts online payments via paystack and payoneer.",
+            title: "Do you consolidate",
+            words: "Yes, we always consolidate and guess what, it is free. Our consolidation services saves you cost and also helps optimize and maximize your shipping experience.",
         },
         {
-            title: "Can you send me an invoice",
-            words: "Yes!, you will get a signed and stamped PDF invoice for all your orders and shipping payments.",
+            title: "How do i  know if a supplier is legit",
+            words: "You can check the store profile, reviews from previous buyers, ask for real time picture or video of the items and most important, try the supplier with a sample order first to see the supplier reliability.",
         },
         {
-            title: "How do i send goods to you",
-            words: "You just download our address card, send it to your suppliers and they send your goods to Us.",
+            title: "Their calculation is different from ours",
+            words: "The prices on the website are mostly just the price, local logistics to deliver it to your agent are not included.",
         },
     ]
     

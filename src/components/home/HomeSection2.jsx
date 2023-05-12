@@ -6,7 +6,7 @@ const HomeSection2 = () => {
   return (
     <div className='bg-cover bg-center flex-col justify-start py-5 md:py-8 lg:py-8 xl:py-10' style={{backgroundImage: `url(${img2})`}}>
         <div className='flex items-center justify-between mx-10 md:mx-36 lg:mx-44 xl:mx-60'>
-            <div className='text-[#C5CAD2] ml-4 md:ml-0'>
+            <div className='text-[#b9bcc2] ml-4 md:ml-0'>
                 <h1 className='font-inter text-[23px] font-semibold md:text-[27px] lg:text-[40px] xl:text-[50px]'>
                     1,845+
                 </h1>
@@ -15,7 +15,7 @@ const HomeSection2 = () => {
                 </p>
             </div>
 
-            <div className='text-[#C5CAD2]'>
+            <div className='text-[#b9bcc2]'>
                 <h1 className='font-inter text-[23px] font-semibold md:text-[27px] lg:text-[40px] font-bol xl:text-[50px]'>
                     300+
                 </h1>

@@ -20,21 +20,30 @@ const AboutSec2 = () => {
         },
     ]
   return (
-    <div className='flex flex-col items-center justify-center pt-14 pb-7 px-7 bg-[#E0E6F0] md:px-12 lg:pt-36 lg:px-12'>
+    <div className='flex flex-col items-center justify-center pt-14 pb-7 px-7 bg-[#E0E6F0] md:px-12 lg:pt-40 lg:px-12 xl:pt-52'>
                     {/* TOP */}
         <div className='flex flex-col items-start justify-center lg:flex-row-reverse lg:items-start lg:justify-between'>
-            <div className='flex flex-col items-start justify-center lg:ml-[-250px] xl:ml-[-300px]'>
+            <div className='flex flex-col items-start justify-center lg:ml-[-250px] lg:mt-[-80px] xl:ml-[-450px]'>
                 <h1 className='font-sans text-[#1A8F98] text-2xl font-[500] mb-2 lg:text-3xl lg:font-[600] xl:text-5xl xl:mb-3'>
                      Who We Are
                 </h1>
-                <p className='font-sans text-xs font-[700] leading-5 my-2 md:w-[55vw] md:text-[13px] lg:w-[25rem] lg:text-[13px] lg:leading-5 xl:text-[16px] xl:w-[33rem] xl:leading-6 xl:my-5'>
-                     A leading transborder supply chain management organization, Chinadojo’s goal is to link Chinese suppliers with companies all over the world.
+                <p className='font-sans text-[#333333] text-xs font-[500] leading-5 my-2 md:w-[75vw] md:text-[13px] lg:w-[30rem] lg:text-[13px] lg:leading-5 xl:text-[18px] xl:w-[40rem] xl:leading-6 xl:my-5'>
+                     A leading trans-border supply chain management organization, Chinadojo’s goal is to link Chinese suppliers with companies all over the world.
                 </p>
-                <p className='font-sans text-xs font-[700] leading-5 my-2 md:w-[55vw] md:text-[13px] lg:w-[25rem] lg:text-[13px] lg:leading-5 xl:text-[16px] xl:w-[33rem] xl:leading-6 xl:my-5'>
-                    We have the resources and know-how to streamline every stage of your supply chain, from sourcing to final doorstep delivery, with locations in Mainland China, Hong Kong, and Nigeria.
+                <p className='font-sans text-[#333333] text-xs font-[500] leading-5 my-2 md:w-[75vw] md:text-[13px] lg:w-[30rem] lg:text-[13px] lg:leading-5 xl:text-[18px] xl:w-[40rem] xl:leading-6 xl:my-5'>
+                     We have the resources and know-how to streamline every stage of your supply chain, from sourcing to final doorstep delivery, with locations in Mainland China, Hong Kong, and Nigeria.
                 </p>
-                <p className='font-sans text-xs font-[700] leading-5 my-2 md:w-[55vw] md:text-[13px] lg:w-[25rem] lg:text-[13px] lg:leading-5 xl:text-[16px] xl:w-[33rem] xl:leading-6 xl:my-5'>
-                    For our clients, we want the process to proceed as smoothly, stress-free, and profitably as possible. We are dedicated to providing top-notch service and assisting our clients in succeeding.
+                <p className='font-sans text-[#333333] text-xs font-[500] leading-5 my-2 md:w-[75vw] md:text-[13px] lg:w-[30rem] lg:text-[13px] lg:leading-5 xl:text-[18px] xl:w-[40rem] xl:leading-6 xl:my-5'>
+                     For our clients, we want the process to proceed as smoothly, stress-free, and profitably as possible. We are dedicated to providing top-notch service and assisting our clients in succeeding.
+                </p>
+                <p className='font-sans text-[#333333] text-xs font-[500] leading-5 my-2 md:w-[75vw] md:text-[13px] lg:w-[30rem] lg:text-[13px] lg:leading-5 xl:text-[18px] xl:w-[40rem] xl:leading-6 xl:my-5'>
+                     With our team of seasoned logistics experts and cutting-edge technology, we are committed to delivering excellence in every aspect of our service. We provide Procurement, Payment to Chinese suppliers, Supplier and product sourcing, Air cargo and sea cargo. 
+                </p>
+                <p className='font-sans text-[#333333] text-xs font-[500] leading-5 my-2 md:w-[75vw] md:text-[13px] lg:w-[30rem] lg:text-[13px] lg:leading-5 xl:text-[18px] xl:w-[40rem] xl:leading-6 xl:my-5'>             
+                     We take care of the logistical intricacies, allowing you to focus on your core business objectives. A leading trans-border supply chain management organization, Chinadojo’s goal is to link Chinese suppliers with companies all over the world. 
+                </p>
+                <p className='font-sans text-[#333333] text-xs font-[500] leading-5 my-2 md:w-[75vw] md:text-[13px] lg:w-[30rem] lg:text-[13px] lg:leading-5 xl:text-[18px] xl:w-[40rem] xl:leading-6 xl:my-5'>
+                     Whether you are a small business or a multinational corporation, we are committed to providing you with exceptional shipping services that surpass your expectations. Contact us today and experience the reliable, efficient, and customer-focused shipping solutions that drive your success.
                 </p>
             </div>
 
@@ -43,7 +52,7 @@ const AboutSec2 = () => {
             </div>
         </div>
                     {/* BOTTOM */}
-        <div className='flex flex-col items-center justify-center mt-16 lg:mt-7'>
+        <div className='flex flex-col items-center justify-center mt-16 lg:mt-20 lg:mb-12 xl:mt-24'>
             <h1 className='font-sans text-[#1A8F98] text-2xl font-[500] mb-1 text-center md:mb-3 lg:text-3xl lg:font-[600] xl:text-4xl xl:mb-5'>
                  Our Values
             </h1>
