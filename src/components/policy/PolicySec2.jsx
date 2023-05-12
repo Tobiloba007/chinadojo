@@ -66,8 +66,19 @@ const PolicySec2 = () => {
               <br />
               <b>Cargo Handling and Storage: </b>
               <span>
-              We handle your cargo with the utmost care and professionalism throughout the loading, unloading, and storage processes. Our trained personnel will ensure proper handling techniques are employed to minimise the risk of damage or loss. We maintain secure and well-monitored storage facilities to safeguard your cargo during transit or when awaiting further transportation arrangements. We shall take all necessary precautions to protect fragile items, however all such items shall be sent totally at the owner's risk. Delivery and Distribution: We strive to deliver your sea cargo in a timely manner, adhering to the agreed-upon schedule and routing. Our team will coordinate with reliable carriers, agents, and partners to ensure efficient delivery to the designated destination. Delivery times may vary depending on factors such as distance, weather conditions, customs clearance, or unforeseen events beyond our control. We will keep you informed of any significant changes or delays affecting your delivery. At Chinadojo Procurement Agency, we are committed to providing excellent sea cargo services and ensuring your satisfaction throughout the shipping journey. By adhering to our service policy, we aim to build lasting relationships based on trust, reliability, and exceptional customer service. Should you have any questions or require further clarification regarding our service policy, please do not hesitate to contact our dedicated customer service team. We look forward to serving you.
+              We handle your cargo with the utmost care and professionalism throughout the loading, unloading, and storage processes. Our trained personnel will ensure proper handling techniques are employed to minimise the risk of damage or loss. We maintain secure and well-monitored storage facilities to safeguard your cargo during transit or when awaiting further transportation arrangements. We shall take all necessary precautions to protect fragile items, however all such items shall be sent totally at the owner's risk. 
               </span>
+              <br />
+              <br />
+              <b>Delivery and Distribution: </b>
+              <span>
+              We strive to deliver your sea cargo in a timely manner, adhering to the agreed-upon schedule and routing. Our team will coordinate with reliable carriers, agents, and partners to ensure efficient delivery to the designated destination. Delivery times may vary depending on factors such as distance, weather conditions, customs clearance, or unforeseen events beyond our control. We will keep you informed of any significant changes or delays affecting your delivery. 
+              </span>
+              <br />
+              <br />
+              <p>
+              At Chinadojo Procurement Agency, we are committed to providing excellent sea cargo services and ensuring your satisfaction throughout the shipping journey. By adhering to our service policy, we aim to build lasting relationships based on trust, reliability, and exceptional customer service. Should you have any questions or require further clarification regarding our service policy, please do not hesitate to contact our dedicated customer service team. We look forward to serving you.
+              </p>
             </div>
         },
         {
