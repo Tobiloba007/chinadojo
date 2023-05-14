@@ -105,101 +105,27 @@ const PolicySec2 = () => {
         },
         {
             id: 4,
-            title: "Alibaba Procurement Policy",
-            words: <p>
-              1. For Alibaba.com orders.
-              <br />
-              2. Customer submits well arranged links stating quantities descriptions and colour.
-              <br />
-              3. Customer makes a deposit of N5,000 refunded ONLY after order is placed.
-              <br />
-              4. Our procurement agents will prepare and send a pdf invoice within 24 hours.
-              <br />
-              5. Payment is made for invoice.
-              <br />
-              6. Orders are placed.
-              <br />
-              7. Procurement takes 7 days.
-              <br />
-              8. Our service charge is 5% of total order or 100 RMB for orders below N50,000.
-            </p>,
-        },
-        {
-            id: 5,
-            title: "Sourcing Policy",
-            words: <p>
-              1. Customer sends clear picture and description of items needed.
-              <br />
-              2. Customer makes a service charge payment of N3,000/item refunded ONLY if items are not found.
-              <br />
-              3. Our sourcing agents will prepare and send a proforma invoice with all details within 24 hours.
-            </p>,
-        },
-        {
-            id: 6,
-            title: "Fees & Charges",
-            words: <p>
-              1. FEES & CHARGES FOR AIR FREIGHT (No Hidden Charges)
-              <br />
-              2. Consolidation = N200/Package
-              <br />
-              3. Packing Fee = $2.4 /Carton
-              <br />
-              4. Wood Packing = 100 RMB/Carton
-              <br />
-              5. Shipping Fee (From China – Lagos, Abuja, Kano)
-              <br />
-              6. Custom Duties = N 500/KG (normal goods) N500/KG (Hong Kong Cargo)
-              <br />
-              7. Waybill outside Lagos = N300/KG, Minimum Charge = 3,000
-              <br />
-              8. Items 4 & 5 are applicable in all instances.
-              <br />
-              9. Item 2 is applicable when goods above 10kg
-              <br />
-              10. Item 3 is applicable where items are fragile
-              <br />
-              11. Item 1 is applicable when you buy from more than 1 supplier.
-            </p>,
-        },
-        {
-            id: 7,
             title: "Fragile Goods & Insurance",
             words: <p>
               1. At Chinadojo, we take outmost care of all your goods, however we cannot guarantee safety of goods during transit. It is in your best interest to insure fragile and highly valuable goods to ensure you get a full refund in any case of loss or damage, insurance cost is 10% of declared value of your items.
             </p>,
         },
         {
-            id: 8,
-            title: "OEM Manufacturing",
-            words: <p>
-              1. We accept links and pictures for OEM manufacturing.
-              <br />
-              2. Service charge for OEM is non-refundable.
-              <br />
-              3. Customers must provide all necessary logos, designs, specifications, and order details.
-              <br />
-              4. We shall provide a comprehensive quote within 48 hours after payments.
-              <br />
-              5. Service Charge for 1 item is N10,000 however this amount is negotiable when customer is manufacturing many types of items.
-            </p>,
-        },
-        {
-            id: 9,
+            id: 5,
             title: "Shipping of GZ & Normal goods",
             words: <p>
               Items such as clothes, shoes , bags, jewellery are considered as normal goods and are shipped through Guangzhou airport. The duration is 7-10 days.
             </p>,
         },
         {
-            id: 10,
+            id: 6,
             title: "Refund Policy",
             words: <p>
               Refunds for incomplete items shall be communicated to the customer instantly and you can either use the refund to reorder, refund cash, or deduct from the shipping
             </p>,
         },
         {
-            id: 11,
+            id: 7,
             title: "Payment to Chinese Supplier Policy",
             words: <p>
               Payments to Chinese suppliers are done within 2-5hours after payment of naira is confirmed. A transaction fee of 50rmb will be charged. This fee covers all the payment or multiple payment you make within 24hrs, that is if you are paying different suppliers, the service charge covers all. We will do our best to verify all suppliers before payments, however, we will not be held responsible for any loss, therefore customers are advised to deal only with trusted suppliers.
