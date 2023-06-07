@@ -8,12 +8,13 @@ const LandingPrice = () => {
     const [rate, setRate] = useState('');
     const [result, setResult] = useState(false);
 
-    const shippingFee =  (weight * shipping) * rate
-    const clearingFee =  weight * clearing
-    const landingCost = goods + shippingFee + clearingFee
-
-    const calculate = () => {
-        setResult(true)
+    const shippingFee =  ((weight * shipping) * rate).toFixed(1)
+    const clearingFee =  (weight * clearing).toFixed(1)
+    const landingCost = parseInt(goods) + parseInt(shippingFee) + parseInt(clearingFee)
+    
+    const calculate = (e) => {
+        e.preventDefault();
+        setResult(true);
     }
 
   return (
@@ -29,7 +30,8 @@ const LandingPrice = () => {
 
        <div className='flex flex-col items-start justify-center w-full mt-8 md:mt-5 lg:flex-row lg:mt-12'>
                      {/* CALCULATOR */}
-        <div className='flex flex-col items-start justify-start h-[31rem] rounded-md w-[75vw] bg-[#f1f1f1] px-5 pt-5 md:px-20 lg:w-[43vw] 
+        <form onSubmit={calculate}
+        className='flex flex-col items-start justify-start h-[31rem] rounded-md w-[75vw] bg-[#f1f1f1] px-5 pt-5 md:px-20 lg:w-[43vw] 
         lg:h-[26rem] lg:mr-5 lg:px-7 xl:w-[41vw] xl:h-[28rem]'>
                          {/* Price of Goods */}
             <div className='flex flex-col items-center justify-start w-full my-2 lg:flex-row lg:justify-between'>
@@ -113,14 +115,14 @@ const LandingPrice = () => {
             </div>
                           {/* BUTTON */}     
             <div className='flex items-start justify-start mt-3 lg:mx-20 xl:mx-24'>
-                <button onClick={calculate}
+                <button type='submit'
                 className='text-center text-[13px] font-normal outline-none border-none py-2 px-5 bg-[#1A8F98] text-[#ffff]
                  hover:bg-[#F8C605] hover:text-[#474545] rounded-md lg:px-6 xl:text-[15px]'>
                     CALCULATE
                 </button>
             </div>
 
-        </div>
+        </form>
                       {/* LANDING COST */}
         {result ? 
         <div className='flex flex-col items-start justify-start h-64 rounded-md w-[75vw] bg-[#f1f1f1] mt-4 px-5 pt-4 md:px-20 md:pt-6
@@ -161,7 +163,7 @@ const LandingPrice = () => {
                     Landing Cost :
                 </h1>
                 <h1 className='text-[12px] font-bold ml-6 md:text-[13px] lg:text-[14px] xl:text-[16px]'>
-                    {goods} + {shippingFee} + {clearingFee} = {landingCost} ₦
+                    {goods} + {shippingFee}  + {clearingFee} = {landingCost} ₦
                 </h1>
             </div>
         </div> : ''
