@@ -9,6 +9,7 @@ import HomeFaq from '../components/home/HomeFaq'
 import Footer from '../components/Footer'
 import Floatingbtn from '../components/Floatingbtn'
 import { useLocation } from 'react-router-dom';
+import Rate from '../components/home/Rate'
 
 const Home = () => {
   const location = useLocation();
@@ -27,6 +28,9 @@ const Home = () => {
       <HomeSection2 />
       <HomeServices />
       <HomeSection4 />
+      <div id='rate'>
+       <Rate /> 
+      </div>
       <div id='testimonials'>
        <HomeTestimonials />
       </div>
