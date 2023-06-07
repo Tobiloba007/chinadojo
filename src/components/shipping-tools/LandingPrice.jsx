@@ -16,12 +16,6 @@ const LandingPrice = () => {
         setResult(true)
     }
 
-    // const handleKeyPress = (event) => {
-    //     if(event.key === '.'){
-    //         event.preventDefault();
-    //     }
-    // }
-
   return (
     <div className='flex flex-col items-center justify-center w-full mt-7 mb-10'>
 
@@ -50,7 +44,7 @@ const LandingPrice = () => {
                 placeholder='Price of Goods'
                 id="goods"
                 value={goods}
-                onChange={(e) => setGoods(parseFloat(e.target.value))}
+                onChange={(e) => setGoods((e.target.value))}
                />
             </div>
                                {/* Weight */}
@@ -99,7 +93,6 @@ const LandingPrice = () => {
                 id="clearing"
                 value={clearing}
                 onChange={(e) => setClearing((e.target.value))}
-                // onKeyDown={handleKeyPress}
                />
             </div>
                                      {/* Exchange Rate */}
