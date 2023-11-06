@@ -40,24 +40,27 @@ const Nav = () => {
     },
     {
       label: <div className='flex flex-col justify-center'>
-        <Link to={{ pathname: '/', search: '?sectionId=rate'}}
-        className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>RATE</Link>
+        {/* <Link to={{ pathname: '/', search: '?sectionId=rate'}}
+        className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>
+          RATE</Link> */}
         <hr className='mx-10' />
               </div>, 
       key: '3',
     },
     {
       label: <div className='flex flex-col justify-center'>
-        <Link to='/shipping-tools'
-        className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>SHIPPING TOOLS</Link>
+        {/* <Link to='/shipping-tools'
+        className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>
+          SHIPPING TOOLS</Link> */}
         <hr className='mx-10' />
               </div>, 
       key: '4',
     },
     {
       label: <div className='flex flex-col justify-center'>
-        <Link to={{ pathname: '/', search: '?sectionId=testimonials' }} 
-        className='font-inter z-50 text-[12px] text-center pt-5 font-[500] hover:text-[#1A8F98]'>TESTIMONIALS</Link>
+        {/* <Link to={{ pathname: '/', search: '?sectionId=testimonials' }} 
+        className='font-inter z-50 text-[12px] text-center pt-5 font-[500] hover:text-[#1A8F98]'>
+          TESTIMONIALS</Link> */}
               </div>, 
       key: '5',
     },
