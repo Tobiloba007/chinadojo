@@ -9,7 +9,7 @@ import ShippingTools from "./pages/ShippingTools"
 
 function App() {
   return (
-    <Router>
+    <Router basename="/myapp">
        <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/services" element={<Services />} />

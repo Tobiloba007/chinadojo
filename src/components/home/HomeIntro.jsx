@@ -20,7 +20,7 @@ const HomeIntro = () => {
 
            <div className='flex justify-start items-center my-5 w-[100%] md:w-[75%] lg:my-6 lg:w-[65%] xl:w-[55%] xl:my-10'>
              <p className='font-Dm-sans z-50 text-white text-[14px] md:text-[16px] md:font-[400] lg:text-[16px] lg:font-[500] xl:text-[20px]'>
-               Welcome to Chinadojo Procurement Agency, where efficiency meets reliability in the world of supply chain management.  We are dedicated to providing seamless logistics solutions tailored to meet your specific needs, no matter the size or complexity of your operations.
+               Welcome to Chinadojo Procurement Agency, where efficiency meet reliability in the world of supply chain management.  We are dedicated to providing seamless logistics solutions tailored to meet your specific needs, no matter the size or complexity of your operations.
              </p>
            </div>
 
