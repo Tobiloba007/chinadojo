@@ -33,9 +33,9 @@ const Rate = () => {
         return <p>Loading...</p>;
       }
     
-    //   if (error) {
-    //     return <p>Error: {error.message}</p>;
-    //   }
+      if (error) {
+        return <p>Error: {error.message}</p>;
+      }
     
 
     const first = getRates[0]
