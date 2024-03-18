@@ -40,27 +40,27 @@ const Nav = () => {
     },
     {
       label: <div className='flex flex-col justify-center'>
-        {/* <Link to={{ pathname: '/', search: '?sectionId=rate'}}
+        <Link to={{ pathname: '/', search: '?sectionId=rate'}}
         className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>
-          RATE</Link> */}
+          RATE</Link>
         <hr className='mx-10' />
               </div>, 
       key: '3',
     },
     {
       label: <div className='flex flex-col justify-center'>
-        {/* <Link to='/shipping-tools'
+         <Link to='/shipping-tools'
         className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>
-          SHIPPING TOOLS</Link> */}
+          SHIPPING TOOLS</Link> 
         <hr className='mx-10' />
               </div>, 
       key: '4',
     },
     {
       label: <div className='flex flex-col justify-center'>
-        {/* <Link to={{ pathname: '/', search: '?sectionId=testimonials' }} 
+         <Link to={{ pathname: '/', search: '?sectionId=testimonials' }} 
         className='font-inter z-50 text-[12px] text-center pt-5 font-[500] hover:text-[#1A8F98]'>
-          TESTIMONIALS</Link> */}
+          TESTIMONIALS</Link>
               </div>, 
       key: '5',
     },
@@ -68,9 +68,9 @@ const Nav = () => {
       type: 'divider',
     },
     {
-      label: <button 
-      className='flex flex-row items-center z-50 justify-center font-inter text-[12px] text-white bg-[#1A8F98] hover:bg-[#F8C605]
-       hover:text-[#474545] text-center font-[500] h-10 w-[80vw]'>CONTACT US</button>,
+      label: <Link to={{ pathname: '/', search: '?sectionId=footer' }}
+      className='flex flex-row items-center z-50 justify-center font-inter text-[12px] text-[#ffffff] bg-[#1A8F98] hover:bg-[#F8C605]
+       hover:text-[#474545] text-center font-[500] h-10 w-[80vw]'>CONTACT US</Link>,
       key: '6',
     },
   ];
