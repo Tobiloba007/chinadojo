@@ -29,7 +29,7 @@ const Home = () => {
       <HomeServices />
       <HomeSection4 />
       <div id='rate'>
-       <Rate /> 
+       {/*<Rate />*/} 
       </div>
       <div id='testimonials'>
        <HomeTestimonials />
