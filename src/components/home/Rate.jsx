@@ -82,7 +82,7 @@ const Rate = () => {
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                 </tr>
-
+                
                 {fourth.content.map((item) => {
                     return(
                         <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#efefef] lg:h-16 xl:h-20'>
@@ -157,7 +157,7 @@ const Rate = () => {
 
                 {first.content.map((item) => {
                     return(
-                        <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#efefef] lg:h-16 xl:h-20'>
+                        <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#D9D9D9] lg:h-16 xl:h-20'>
                             <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.type}</td>
                             <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.rate}</td>
                             <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
