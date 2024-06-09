@@ -22,9 +22,11 @@ const Rate = () => {
         .then((data) => {
             setGetRates(data);
             setLoading(false);
+            console.log(data);
           })
           .catch((err) => {
             setError(err);
+            console.log(err);
             setLoading(false);
           });
     },[])
@@ -73,61 +75,48 @@ const Rate = () => {
                     <td></td>
                     <td></td>
                 </tr>
-
+                
                 <tr className='w-[80vw] bg-[#c0bebe] h-10 mt-5 lg:h-16 xl:h-20'>
                     <td className='text-center text-[16px] font-bold w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[18px] lg:text-[20px] lg:font-bold xl:text-[25px]'>{fourth.sectionName}</td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                 </tr>
-                <tr className='w-[80vw] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 pl-3 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{fourth.content[0].type}</td>
-                    <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{fourth.content[0].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{fourth.content[0].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{fourth.content[0].duration}</td>
-                </tr>
-                <tr className='w-[80vw] bg-[#D9D9D9] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 pl-3 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[1].type}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[1].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[1].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[1].duration}</td>
-                </tr>
-                <tr className='w-[80vw] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 pl-3 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[2].type}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[2].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[2].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[2].duration}</td>
-                </tr>
-                <tr className='w-[80vw] bg-[#D9D9D9] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 pl-3 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[3].type}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[3].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[3].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{fourth.content[3].duration}</td>
-                </tr>
+                
+                {fourth.content.map((item) => {
+                    return(
+                        <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#efefef] lg:h-16 xl:h-20'>
+                            <td className='text-center text-[10px] w-24 pl-3 md:text-[12px] md:w-40 lg:w-44 xl:w-60 rounded-l-lg lg:font-bold xl:text-[16px]'>{item.type}</td>
+                            <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{item.rate}</td>
+                            <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
+                            <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 rounded-r-lg lg:font-bold xl:text-[16px]'>{item.duration}</td>
+                        </tr>
+                    )
+                })}
 
 
                 <tr className='h-2'>
                     <td></td>
                     <td></td>
                 </tr>
+                
                 <tr className='w-[80vw] bg-[#c0bebe] h-10 mt-5 lg:h-16 xl:h-20'>
                     <td className='text-center text-[16px] font-bold w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[18px] lg:text-[20px] lg:font-bold xl:text-[25px]'>{second.sectionName}</td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                 </tr>
-                <tr className='w-[80vw] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{second.content[0].type}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{second.content[0].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{second.content[0].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{second.content[0].duration}</td>
-                </tr>
-                <tr className='w-[80vw] bg-[#D9D9D9] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{second.content[1].type}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{second.content[1].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{second.content[1].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{second.content[1].duration}</td>
-                </tr>
+
+                {second.content.map((item) => {
+                    return (
+                        <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#efefef] lg:h-16 xl:h-20'>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.type}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.rate}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.duration}</td>
+                        </tr>
+                    )
+                })}
 
 
 
@@ -141,12 +130,17 @@ const Rate = () => {
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                 </tr>
-                <tr className='w-[80vw] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{third.content[0].type}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{third.content[0].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{third.content[0].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{third.content[0].duration}</td>
-                </tr>
+
+                {third.content.map((item) => {
+                    return(
+                        <tr key={item.id} className='w-[80vw] h-14 even:bg-white odd:bg-[#efefef] lg:h-16 xl:h-20'>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.type}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.rate}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.duration}</td>
+                        </tr>
+                    )
+                })}
 
 
 
@@ -160,18 +154,17 @@ const Rate = () => {
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                 </tr>
-                <tr className='w-[80vw] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{first.content[0].type}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{first.content[0].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{first.content[0].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{first.content[0].duration}</td>
-                </tr>
-                <tr className='w-[80vw] bg-[#D9D9D9] h-14 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{first.content[1].type}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{first.content[1].rate}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{first.content[1].clearingFee}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{first.content[1].duration}</td>
-                </tr>
+
+                {first.content.map((item) => {
+                    return(
+                        <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#D9D9D9] lg:h-16 xl:h-20'>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.type}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.rate}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
+                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.duration}</td>
+                        </tr>
+                    )
+                })}
             </tbody>
         </table>
 

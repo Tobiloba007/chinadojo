@@ -28,9 +28,9 @@ const Home = () => {
       <HomeSection2 />
       <HomeServices />
       <HomeSection4 />
-      <div id='rate'>
-       {/*<Rate />*/} 
-      </div>
+       <div id='rate'>
+            <Rate /> 
+        </div>
       <div id='testimonials'>
        <HomeTestimonials />
       </div>
