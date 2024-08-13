@@ -120,6 +120,8 @@ const Nav = () => {
            className='z-50 font-inter text-[10px] text-white font-[600] mx-3 xl:text-[14px] hover:text-[#F8C605]'>ABOUT US</Link>
            <Link  to='/services'
            className='z-50 font-inter text-[10px] text-white font-[600] mx-3 xl:text-[14px] hover:text-[#F8C605]'>SERVICES</Link>
+           <Link  to='/blog'
+           className='z-50 font-inter text-[10px] text-white font-[600] mx-3 xl:text-[14px] hover:text-[#F8C605]'>BLOG</Link>
            <Link  to={{ pathname: '/', search: '?sectionId=rate'}}
            className='z-50 font-inter text-[10px] text-white font-[600] mx-3 xl:text-[14px] hover:text-[#F8C605]'>RATE</Link>
            <Link  to='/shipping-tools'

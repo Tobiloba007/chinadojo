@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import sanityClient from '../../../sanity';
 
+
 const Rate = () => {
     const [getRates, setGetRates] = useState([]);
     const [loading, setLoading] = useState(true);
