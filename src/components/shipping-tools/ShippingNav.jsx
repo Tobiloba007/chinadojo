@@ -41,11 +41,19 @@ const ShippingNav = () => {
     },
     {
       label: <div className='flex flex-col justify-center'>
+        <Link to='/blog'
+        className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>BLOG</Link>
+        <hr className='mx-10' />
+              </div>, 
+      key: '3',
+    },
+    {
+      label: <div className='flex flex-col justify-center'>
         <Link to={{ pathname: '/', search: '?sectionId=rate'}}
         className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>RATE</Link>
         <hr className='mx-10' />
               </div>, 
-      key: '3',
+      key: '4',
     },
     {
       label: <div className='flex flex-col justify-center'>
@@ -53,14 +61,14 @@ const ShippingNav = () => {
         className='font-inter z-50 text-[12px] text-center pt-5 pb-2 font-[500] hover:text-[#1A8F98]'>SHIPPING TOOLS</Link>
         <hr className='mx-10' />
               </div>, 
-      key: '4',
+      key: '5',
     },
     {
       label: <div className='flex flex-col justify-center'>
         <Link to={{ pathname: '/', search: '?sectionId=testimonials' }} 
         className='font-inter z-50 text-[12px] text-center pt-5 font-[500] hover:text-[#1A8F98]'>TESTIMONIALS</Link>
               </div>, 
-      key: '5',
+      key: '6',
     },
     {
       type: 'divider',
@@ -69,7 +77,7 @@ const ShippingNav = () => {
       label: <button 
       className='flex flex-row items-center z-50 justify-center font-inter text-[12px] text-white bg-[#1A8F98] hover:bg-[#F8C605]
        hover:text-[#474545] text-center font-[500] h-10 w-[80vw]'>CONTACT US</button>,
-      key: '6',
+      key: '7',
     },
   ];
   return (
@@ -116,6 +124,8 @@ const ShippingNav = () => {
            className='z-50 font-inter text-[11px] text-white font-[600] mx-3 xl:text-[15px] hover:text-[#F8C605]'>ABOUT US</Link>
            <Link  to='/services'
            className='z-50 font-inter text-[11px] text-white font-[600] mx-3 xl:text-[15px] hover:text-[#F8C605]'>SERVICES</Link>
+           <Link  to='/blog'
+           className='z-50 font-inter text-[11px] text-white font-[600] mx-3 xl:text-[15px] hover:text-[#F8C605]'>BLOG</Link>
            <Link  to={{ pathname: '/', search: '?sectionId=rate'}}
            className='z-50 font-inter text-[11px] text-white font-[600] mx-3 xl:text-[15px] hover:text-[#F8C605]'>RATE</Link>
            <Link  to='/shipping-tools'
