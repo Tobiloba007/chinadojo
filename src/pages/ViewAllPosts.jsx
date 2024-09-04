@@ -3,11 +3,16 @@ import { IoTimeOutline } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import moment from 'moment';
 import imageUrlBuilder from '@sanity/image-url';
-import sanityClient from '../../../blogClient'
+import sanityClient from '../../blogClient';
+import BlogIntro from '../components/blog/BlogIntro';
+import ServicesSec4 from '../components/services/ServicesSec4';
+import Footer from '../components/Footer';
+import Floatingbtn from '../components/Floatingbtn';
+import { PulseLoader } from 'react-spinners';
 
 
 
-const BrowseNews = ({title}) => {
+const ViewAllPosts = ({title}) => {
     const [stories, setStories] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -36,7 +41,15 @@ const BrowseNews = ({title}) => {
   },[])
   
   if (loading) {
-      return <p>Loading...</p>;
+      return (
+    <div className='flex items-center justify-center h-screen w-full'>
+      <PulseLoader
+        size={15} // size of the loader (in pixels)
+        color={'#1A8F98'} // color of the loader
+        loading={true} // boolean to show/hide the loader
+      />
+    </div>
+  );
     }
   
     if (error) {
@@ -46,7 +59,9 @@ const BrowseNews = ({title}) => {
     const builder = imageUrlBuilder(sanityClient);
 
   return (
-    <main className='flex flex-col items-start justify-start w-full font-sans mb-9 px-5 mt-5 md:px-10 md:mb-0 lg:px-11 lg:mt-8 xl:px-24 xl:mt-12 xl:mb-14 max-w-[1440px]'>
+    <main>
+         <BlogIntro />
+    <div className='flex flex-col items-start justify-start w-full font-sans mb-9 px-5 mt-5 md:px-10 md:mb-0 lg:px-11 lg:mt-8 xl:px-24 xl:mt-12 xl:mb-14 max-w-[1440px]'>
          <div className='flex items-center justify-start w-full mt-8 md:mt-12 xl:mt-10'>
              <p className='text-sm text-[#1A8F98] font-medium font-sans text-start w-full md:text-[15px] lg:text-[17px] xl:text-[21px]'>
                    {title}
@@ -55,7 +70,7 @@ const BrowseNews = ({title}) => {
 
 
          <div className='flex flex-col items-start w-full mt-5 md:flex-row md:items-start md:justify-start md:flex-wrap'>
-              {stories.slice(0, 3).map((item) => (
+              {stories.map((item) => (
                <Link key={item.slug.current} to={`/blog/${item.slug.current}`} className={`flex flex-col items-start w-full mb-8 md:mr-3 md:w-[31.5%] lg:mr-3.5 lg:w-[31.5%] xl:mr-5`}>
                    <img className='h-[224px] w-full rounded-t-xl object-cover md:h-40 lg:h-[180px] xl:h-72 xl:rounded-t-2xl'
                    src={builder.image(item.mainImage.asset._ref).url()} alt='news_image' />
@@ -94,16 +109,12 @@ const BrowseNews = ({title}) => {
 
          </div>
 
-
-         <div className='flex items-center justify-end w-full md:mt-7'>
-              <Link to='/viewAllPosts' className='flex items-center justify-center h-8 px-4 rounded-md bg-[#1A8F98] text-[11px] text-white 
-                                                  font-medium md:px-4 md:text-xs xl:text-base xl:h-12 xl:px-7 xl:rounded-lg'>
-                View all posts
-              </Link>
-         </div>
-
+    </div>
+        <ServicesSec4 />
+        <Footer />
+        <Floatingbtn />
     </main>
   )
 }
 
-export default BrowseNews
+export default ViewAllPosts

@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import bgImg from '../../assets/blog1.jpg'
 import { IoTimeOutline } from "react-icons/io5";
-import { PiDiamondsFourFill } from "react-icons/pi";
 import { IoBookOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import moment from 'moment';
+import imageUrlBuilder from '@sanity/image-url';
+import sanityClient from '../../../blogClient';
 
 
 
-const BlogPreview = () => {
+const BlogPreview = ({data}) => {
+
+    useEffect(()=>{
+        // console.log(data, 'CONTENT');
+
+    },[])
+
+    const builder = imageUrlBuilder(sanityClient);
+
+
   return (
     <main className='flex flex-col items-start justify-start w-full font-inter mt-7 mb-2 px-5 md:px-8 lg:px-11 xl:px-24 xl:mt-12 max-w-[1440px]'>
          <div className='w-full'>
@@ -25,21 +36,20 @@ const BlogPreview = () => {
               </p>
          </div>
 
-         <Link to='/newsPreiew' className='relative flex items-end justify-center w-full mt-3.5 md:mt-6 lg:mt-8 xl:mt-9'>
+         <Link to={`/blog/${data.slug.current}`} className='relative flex items-end justify-center w-full mt-3.5 md:mt-6 lg:mt-8 xl:mt-9'>
              <img className='h-[500px] w-full object-cover rounded-2xl md:h-[400px] md:rounded-3xl lg:h-[450px] xl:h-[650px]'
-             src={bgImg} alt='preview_img' />
-
+             src={builder.image(data.mainImage.asset._ref).url()} 
+             alt='preview_img' loading='lazy' />
              <div className='absolute opacity-50 h-[500px] w-full bg-[#191919] rounded-2xl md:h-[400px] md:rounded-3xl lg:h-[450px] xl:h-[650px]'></div>
 
              <div className='absolute flex flex-col items-start w-full px-3 pb-5 md:px-8 lg:px-11 xl:px-16'>
-                  <p className='text-base text-[#F8C605] font-light font-sans text-start mt-3 pr-3 leading-7 w-full md:text-lg md:w-[95%] md:font-normal lg:text-2xl lg:leading-8 
+                  <p className='text-base text-[#F8C605] font-medium font-sans text-start capitalize mt-3 pr-3 leading-7 w-full md:text-lg md:w-[95%] md:font-normal lg:text-2xl lg:leading-8 
                                 lg:font-light lg:w-[85%] xl:mt-4 xl:text-[32px] xl:leading-[45px]'>
-                      3 Awesome Complete Open Source Mail Servers Solutions For Linux and UNIX servers
+                      {data.title}
                   </p>
                   <p className='text-[13px] text-[#ffffff] font-normal text-start mt-3 pr-3 leading-6 w-full md:font-light md:w-[95%] md:leading-5 lg:leading-[22px] xl:mt-4 
                                 xl:leading-7 xl:text-base'>
-                      Most mail servers made of Mail delivery agent (MDA) and Mail Transfer Agents (MTA). MDA software used to routes e-mail to its  
-                      destination. You use MDA such as Dovecot, Qpopper, Courier, and important notice 
+                      {`${data.body[0].children[0].text.substring(0, 200)}...`}
                       <span className='text-[#F8C605] font-medium text-sm ml-1.5'>Read more</span>
                   </p>
 
@@ -50,7 +60,7 @@ const BlogPreview = () => {
                          <div className='flex justify-start items-center'>
                              <IoTimeOutline className='text-base text-white md:text-lg xl:text-xl' />
                              <p className='text-[10px] text-white font-light text-start pl-1.5 pt-[2px] lg:text-xs xl:text-sm'>
-                                 July 29, 2024
+                                  {moment(data.publishedAt).format('D MMMM, YYYY')}
                              </p>
                          </div>
                       </div>
@@ -58,7 +68,7 @@ const BlogPreview = () => {
                       <div className='flex justify-end items-center w-[35%]'>
                              <IoBookOutline className='text-base text-white xl:text-xl' />
                              <p className='text-[10px] text-white font-light pl-1.5 pt-[2px] lg:text-xs xl:text-sm'>
-                                 60 minutes read
+                                 {data.readngTime} read
                              </p>
                          </div>
                   </div>

@@ -8,6 +8,8 @@ import Demo from "./components/Demo"
 import ShippingTools from "./pages/ShippingTools"
 import Blog from "./pages/Blog"
 import NewsPreview from "./pages/NewsPreview"
+import ViewAllPosts from "./pages/ViewAllPosts"
+
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
          <Route path="/shipping-tools" element={<ShippingTools />} />
          <Route path="/demo" element={<Demo />} />
          <Route path="/blog" element={<Blog/>} />
-         <Route path="/newsPreiew" element={<NewsPreview/>} />
+         <Route path="/blog/:slug" element={<NewsPreview/>} />
+         <Route path="/viewAllPosts" element={<ViewAllPosts/>} />
        </Routes>
     </Router>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import sanityClient from '../../../sanity';
+import sanityClient from '../../../blogClient';
 
 
 const Rate = () => {
@@ -12,7 +12,7 @@ const Rate = () => {
     useEffect(() => { 
         sanityClient.fetch(
             `
-            *[_type == 'section']{
+            *[_type == 'rateInformation']{
                 ...,
                 content[]->{
                     ...,
@@ -23,7 +23,7 @@ const Rate = () => {
         .then((data) => {
             setGetRates(data);
             setLoading(false);
-            console.log(data);
+            // console.log(data, 'RATES');
           })
           .catch((err) => {
             setError(err);
@@ -41,13 +41,13 @@ const Rate = () => {
       }
     
 
-    const first = getRates[0]
+    // const first = getRates[0]
 
-    const second = getRates[1]
+    // const second = getRates[1]
 
-    const third = getRates[2]
+    // const third = getRates[2]
 
-    const fourth = getRates[3]
+    // const fourth = getRates[3]
 
 
   return (
@@ -71,102 +71,29 @@ const Rate = () => {
                     <th className='text-center text-xs w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg xl:text-[16px]' scope='col'>Duration</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr className='h-2'>
-                    <td></td>
-                    <td></td>
-                </tr>
-                
-                <tr className='w-[80vw] bg-[#c0bebe] h-10 mt-5 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[16px] font-bold w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[18px] lg:text-[20px] lg:font-bold xl:text-[25px]'>{fourth.sectionName}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                </tr>
-                
-                {fourth.content.map((item) => {
-                    return(
-                        <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#efefef] lg:h-16 xl:h-20'>
-                            <td className='text-center text-[10px] w-24 pl-3 md:text-[12px] md:w-40 lg:w-44 xl:w-60 rounded-l-lg lg:font-bold xl:text-[16px]'>{item.type}</td>
-                            <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{item.rate}</td>
-                            <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
-                            <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 rounded-r-lg lg:font-bold xl:text-[16px]'>{item.duration}</td>
-                        </tr>
-                    )
-                })}
 
-
-                <tr className='h-2'>
-                    <td></td>
-                    <td></td>
-                </tr>
-                
+            {getRates.map((item) => {
+                return(
+            <tbody key={item.id} className='mt-2.5'>
                 <tr className='w-[80vw] bg-[#c0bebe] h-10 mt-5 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[16px] font-bold w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[18px] lg:text-[20px] lg:font-bold xl:text-[25px]'>{second.sectionName}</td>
+                    <td className='text-center text-[16px] font-bold w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[18px] lg:text-[20px] lg:font-bold xl:text-[25px]'>{item.section.sectionTitle}</td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                     <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
                 </tr>
 
-                {second.content.map((item) => {
-                    return (
-                        <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#efefef] lg:h-16 xl:h-20'>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.type}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.rate}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.duration}</td>
-                        </tr>
-                    )
-                })}
-
-
-
-                <tr className='h-2'>
-                    <td></td>
-                    <td></td>
+                {item.section.rateOptions.map((item) => (
+                <tr key={item._key} className='w-[80vw] h-14 odd:bg-[#efefef] even:bg-white lg:h-16 xl:h-20'>
+                    <td className='text-center text-[10px] w-24 pl-3 md:text-[12px] md:w-40 lg:w-44 xl:w-60 rounded-l-lg lg:font-bold xl:text-[16px]'>{item.type}</td>
+                    <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{item.rate}</td>
+                    <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
+                    <td className='text-center text-[10px] w-24 md:text-[12px] md:w-40 lg:w-44 xl:w-60 rounded-r-lg lg:font-bold xl:text-[16px]'>{item.duration}</td>
                 </tr>
-                <tr className='w-[80vw] bg-[#c0bebe] h-10 mt-5 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[16px] font-bold w-24 pl-3 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[18px] lg:text-[20px] lg:font-bold xl:text-[25px]'>{third.sectionName}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                </tr>
-
-                {third.content.map((item) => {
-                    return(
-                        <tr key={item.id} className='w-[80vw] h-14 even:bg-white odd:bg-[#efefef] lg:h-16 xl:h-20'>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.type}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.rate}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.duration}</td>
-                        </tr>
-                    )
-                })}
-
-
-
-                <tr className='h-2'>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr className='w-[80vw] bg-[#c0bebe] h-10 mt-5 lg:h-16 xl:h-20'>
-                    <td className='text-center text-[16px] font-bold w-28 pl-3 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[18px] lg:font-bold lg:text-[20px] xl:text-[25px]'>{first.sectionName}</td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                    <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'></td>
-                </tr>
-
-                {first.content.map((item) => {
-                    return(
-                        <tr key={item.id} className='w-[80vw] h-14 odd:bg-white even:bg-[#D9D9D9] lg:h-16 xl:h-20'>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-l-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.type}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.rate}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 md:text-[12px] lg:font-bold xl:text-[16px]'>{item.clearingFee}</td>
-                            <td className='text-center text-[10px] w-24 md:w-40 lg:w-44 xl:w-60 rounded-r-lg md:text-[12px] lg:font-bold xl:text-[16px]'>{item.duration}</td>
-                        </tr>
-                    )
-                })}
+                ))}
             </tbody>
+                )
+            })}
+            
         </table>
 
     </div>

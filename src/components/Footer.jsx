@@ -13,8 +13,8 @@ const Footer = () => {
     const navigate = useNavigate();
 
   return (
-    <div className='bg-cover relative bg-center h-[39rem] w-screen md:h-[42rem] lg:h-[24rem] xl:h-[28rem]' style={{backgroundImage: `url(${img1})`}}>
-        <div className="absolute h-[39rem] top-0 left-0 w-full bg-black opacity-50 md:h-[42rem] lg:h-[24rem] xl:h-[28rem]"></div>
+    <div className='bg-cover relative bg-center h-[41rem] w-screen md:h-[45em] lg:h-[26rem] xl:h-[31rem]' style={{backgroundImage: `url(${img1})`}}>
+        <div className="absolute h-[41rem] top-0 left-0 w-full bg-black opacity-50 md:h-[45rem] lg:h-[26rem] xl:h-[31rem]"></div>
          
 
         <div className='flex flex-col items-start justify-center mx-5 lg:flex-row lg:items-start lg:justify-between lg:mx-12 lg:pt-5 xl:mx-28'>
@@ -39,6 +39,11 @@ const Footer = () => {
                     <MdKeyboardArrowRight className='text-base z-50 xl:text-2xl' />
                     <Link to='/services'
                     className='text-sm z-50 font-[700] xl:text-lg hover:text-[#FFCF24]'>Services</Link>
+                </p>
+                <p className='flex flex-row items-center justify-center text-white my-2'>
+                    <MdKeyboardArrowRight className='text-base z-50 xl:text-2xl' />
+                    <Link to='/blog'
+                    className='text-sm z-50 font-[700] xl:text-lg hover:text-[#FFCF24]'>Blog</Link>
                 </p>
                 <p className='flex flex-row items-center justify-center text-white my-2'>
                     <MdKeyboardArrowRight className='text-base z-50 xl:text-2xl' />
@@ -108,6 +113,7 @@ const Footer = () => {
                2023 Chinadojo is powered by <a href='https://www.linkedin.com/in/olajuwon-olalekan' target="_blank" className='text-[#FFCF24]'>Lexcr8t</a>
             </p>
         </div>
+
     </div>
   )
 }
